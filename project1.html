@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+       <title>painting</title>
+  </head>
+<body>
+  <div id="sky">
+  <div id="lamp"></div>
+   <div id="lamp1"></div>
+   <div id="lamp2"></div>
+  <div id="lamp3"></div>
+  <div id="traffic-light">
+  <div id="circle" onmouseover="this.style.background='red';"></div>
+  <div id="circle1" onmouseover="this.style.background='yellow';"></div>
+  <div id="circle2" onmouseover="this.style.background='green';"></div>
+  </div>
+  <div id="circle3"></div>
+  </div> 
+   <div id="moon" onmouseover="this.style.backgroundColor='white';this.style.width='150px';
+				document.getElementById('building').style.backgroundColor='purple';
+                                 document.getElementById('sky').style.backgroundColor='blue';"></div>
+  <div id="building">
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div class="window" onmouseover="this.style.backgroundColor='pink';"></div>
+  <div id="window-second-child">
+  <div id="dot"></div>
+  </div>
+  </div>
+  <div id="building1">
+   <div id="gate">
+   <div id="dot1"></div>
+   </div>
+   </div>
+   <div id="flower"></div>
+  <div id="road">
+ <div id="road1">
+   <div id="lines"></div>
+   <div id="lines-second"></div>
+   <div id="lines-third"></div>
+   <div id="lines-fourth"></div>
+   <div id="lines-fifth"></div>
+   <div id="lines-sixth"></div>  
+   <div id="lines-seventh"></div> 
+   <div id="lines-eigth"></div>
+   <div id="lines-nine"></div>
+   <div id="lines-ten"></div>
+   </div>
+   <div id="road2">
+   <div id="lines-a"></div>
+   <div id="lines-b"></div>
+   <div id="lines-c"></div>
+   <div id="lines-d"></div>
+   <div id="lines-e"></div>
+   <div id="lines-f"></div>
+   <div id="lines-g"></div>
+  <div id="lines-h"></div>
+  <div id="lines-i"></div>
+  <div id="lines-j"></div>
+   </div>
+   <div id="road3">
+   <div id="lines-1"></div>
+   <div id="lines-2"></div>
+   <div id="lines-3"></div>
+   <div id="lines-4"></div>
+   <div id="lines-5"></div>
+  <div id="lines-6"></div>
+   <div id="lines-7"></div>
+   <div id="lines-8"></div>
+   <div id="lines-9"></div>
+   <div id="lines-10"></div>
+   </div>
+  <div id="car" onclick="this.style.marginLeft='80%';">
+  <div id="tyres"></div>
+  <div id="tyres1"></div> 
+  <div id="car-window"></div>
+   </div>
+  
+  </div>
+  <style>
+    body 
+      {
+        margin:0;
+        padding:0;
+      }
+    #sky 
+      {
+         height:500px;
+         width:1500px;
+         background-color:grey; 
+         position:absolute;
+      }
+     #moon
+      {
+         height:100px;
+         width:100px;
+         background-color:white;
+         border-radius:50%;
+         margin-left:70%;
+         position:absolute;
+         top:70px;
+         box-shadow:0px 0px 20px white;
+         transition:5s all ease;
+       }
+       #building1
+       {
+        width:150px;
+        height:250px;
+        background:brown;
+        padding:20px;
+        box-sizing:border-box;
+        margin-top:11%;
+        position:absolute;
+        border:2px solid black;
+        margin-left:190px;
+    }
+       #gate
+      {
+          height:70px;
+          width:50px; 
+          background-color:grey;
+          margin:auto;
+          margin-top:160%;
+      } 
+          #building
+     {
+        width:190px;
+        height:300px;
+        background:yellow;
+        padding:20px;
+        box-sizing:border-box;
+        margin-top:100px;
+        position:absolute;
+        border:2px solid black;
+     }
+       #dot1
+       {
+          height:10px;
+          width:10px;
+          border-radius:50%;
+          background-color:black;
+          margin:auto;
+          display:block;
+          margin-top:20px;
+          position:absolute;
+      }
+     .window
+      {
+         width:50px;
+         height:50px;
+         margin:10px;
+         display:inline-block;
+         background-color:black;
+         top:10px;
+         left:20x;
+         border-radius:20%;
+       }
+     #window-second-child
+       {
+          height:55px;
+          width:50px; 
+          background-color:brown;
+          margin:auto;
+       }
+      #dot
+       {
+          height:10px;
+          width:10px;
+          border-radius:50%;
+          background-color:black;
+          margin:auto;
+          display:block;
+          margin-top:20px;
+          position:absolute;
+      }
+     #road
+       {
+         height:300px;
+         width:1500px;
+         background-color:green;
+         margin-top:30%;
+         position:absolute;
+     
+         }
+     #car
+        {
+          height:100px;
+          width:200px;
+          background-color:red;
+          margin-top:20px;
+          position:absolute;
+          transition:3s all ease;
+          border-radius:10px;
+          margin-left:10%;
+         }
+	
+     #tyres
+        {
+          height:30px;
+          width:30px;
+          border-radius:50%;
+          background-color:black;
+          margin-top:85px;
+          transition:2s all ease;
+          position:absolute;
+        }
+        #tyres1
+       {
+          height:30px;
+          width:30px;
+          border-radius:50%;
+          background-color:black;
+          margin-top:85px;
+          margin-left:70%;
+          position:absolute;
+         transition:2s all ease;
+       }
+        #car-window
+        {
+           height:35px;
+           width:50px;
+           border-radius:10px;
+           background-color:white;
+           margin-left:70%;
+           margin-top:25px;
+           transition:3s all ease;
+        }
+       #road1
+       {
+          height:25px;
+          width:150px;
+          background-color:black;
+          margin-left:50%;
+          margin-top:5%;
+          position:absolute;
+       }
+      #road2
+        {
+           height:25px;
+           width:150px;
+           background-color:black;
+           margin-left:30%;
+           margin-top:5%;
+           position:absolute;
+         }
+       #road3
+      {
+          height:25px;
+          width:150px;
+          background-color:black;
+          margin-left:70%;
+          margin-top:5%;
+      }
+       #lines
+       {
+         height:100%;
+         width:03%;
+         background-color:white;
+         position:absolute;
+         margin-left:2%;
+       }
+      #lines-second
+      {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:13%;
+         margin-top:0%;
+         position:absolute;
+      }
+     #lines-third
+     {
+        height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:25%;
+         margin-top:0;
+         position:absolute;
+         
+     }
+     #lines-fourth
+    {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:35%;
+         margin-top:0;
+         position:absolute;
+     }
+     #lines-fifth
+      {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:45%;
+         margin-top:0;
+         position:absolute;
+     }
+    #lines-sixth
+     {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:55%;
+         margin-top:0;
+         position:absolute;
+     }
+    #lines-seventh
+    {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:65%;
+         margin-top:0;
+         position:absolute;
+     }
+     #lines-eigth
+       {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:75%;
+         margin-top:0;
+         position:absolute;
+     }
+       #lines-nine
+      {
+
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:85%;
+         margin-top:0;
+         position:absolute;
+     }  
+         #lines-ten
+     {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:95%;
+         margin-top:0;
+         }
+      #lines-a
+     {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:1%;
+         margin-top:0;
+         position:absolute;
+     }
+      #lines-b
+     {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:10%;
+         margin-top:0;
+         position:absolute;
+     }
+     #lines-c
+      {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:20%;
+         margin-top:0;
+         position:absolute;
+      }
+        #lines-d
+      {
+          height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:30%;
+         margin-top:0;
+         position:absolute; 
+      }
+
+     #lines-e
+      {
+         height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:40%;
+         margin-top:0;
+         position:absolute;
+       }
+        #lines-f
+      {
+          height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:50%;
+         margin-top:0;
+         position:absolute;
+       }
+        #lines-g
+          {
+             height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:60%;
+         margin-top:0;
+         position:absolute;
+          }
+      #lines-h
+         {
+           height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:70%;
+         margin-top:0;
+         position:absolute;
+          }
+       #lines-i
+        {
+            height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:80%;
+         margin-top:0;
+         position:absolute;
+        }
+       #lines-j
+          {
+              height:100%;
+         width:03%;
+         background-color:white;
+         margin-left:90%;
+         margin-top:0;
+         position:absolute;
+          }
+       #lines-1
+          {
+          height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:2px;
+         margin-top:0;
+         position:absolute; 
+         }
+       #lines-2
+         {
+           height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:20px;
+         margin-top:0;
+         position:absolute; 
+          }
+      #lines-3
+         {
+                height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:40px;
+         margin-top:0;
+         position:absolute; 
+         }
+          #lines-4
+           {
+                 height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:60px;
+         margin-top:0;
+         position:absolute;
+           } 
+         #lines-5
+           {
+                height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:80px;
+         margin-top:0;
+         position:absolute; 
+         }
+            #lines-6
+         {    
+            height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:100px;
+         margin-top:0;
+         position:absolute;
+           }
+              #lines-7
+          {
+                 height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:120px;
+         margin-top:0;
+         position:absolute; 
+          }
+            #lines-8
+         {
+             height:25px;
+         width:4px;
+         background-color:white;
+         margin-left:140px;
+         margin-top:0;
+         position:absolute;  
+        }
+     #lamp
+{
+           height:200px;
+           width:10px;
+           background-color:brown;
+           margin-left:70%;
+           margin-top:15%;
+           position:absolute;
+}
+          #lamp1
+    {
+        height:10px;
+        width:100px;
+        background-color:brown;
+         margin-left:70%; 
+        margin-top:15%;
+        position:absolute;
+    }
+      #lamp2
+    {
+          height:40px;
+          width:40px;
+          border-radius:50%;
+          background-color:yellow;
+          margin-left:75%;
+          margin-top:17%;
+          position:absolute;
+          box-shadow:0px 0px 20px red;
+    }
+        #lamp3
+        {
+         height:40px;
+         width:4px;
+         background-color:black;
+         margin-left:76%;
+         margin-top:15%;
+        }
+       #traffic-light
+        {
+           height:100px;
+           width:50px;
+           background-color:black;
+           margin-left:40%;
+           position:absolute;
+         } 
+       #circle
+        {
+           height:30px;
+           width:30px;
+           background-color:white;
+           border-radius:50%;
+           margin:auto;
+        }
+       #circle1
+       {
+           height:30px;
+           width:30px;
+           background-color:white;
+           border-radius:50%;
+           margin:auto;
+        }
+      #circle2
+      {
+          height:30px;
+           width:30px;
+           background-color:white;
+           border-radius:50%;
+           margin:auto;
+     }
+      #circle3
+       {
+          height:35px;
+         width:10px;
+         background-color:black;
+         margin-left:41.5%;
+        position:absolute;
+        margin-top:6.5%;
+      }
+    #flower:
+        
+</style>
+</body>         
+</html>
